@@ -16,3 +16,5 @@ def calculateAverage(inputList):
         return average
     except ZeroDivisionError:
         return None
+
+print(calculateAverage([1.2,1.3,1.4,2.3,0,5.4,100]))
