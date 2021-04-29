@@ -14,6 +14,8 @@ class TestCase(unittest.TestCase):
         self.assertEqual(volume.volume(complex(4,3),1,4),-1) #testing for complex number
     def test5(self):
         self.assertAlmostEqual(volume.volume(5,5,5),125,3)  #Testing regular volume
+    def test_fail(self):
+        self.assertAlmostEqual(volume.volume(2,2,1),2,3) #This test should fail
 
 if __name__ == "__main__":
     unittest.main()
